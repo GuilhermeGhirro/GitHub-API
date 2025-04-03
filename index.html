@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/icon.css">
+    <link rel="stylesheet" href="./assets/repos.css">
+    <link rel="stylesheet" href="./assets/config_inf.css">
+    <title>Provando que sei java</title>
+    <style></style>
+</head>
+
+<body>
+    <div class="container" style="flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <div class="menu-panel" id="menu-panel">
+            <div class="content">
+                <section class="container" id="header"
+                    style="display: flex; justify-content: center; align-items: center;">
+                    <div class="item">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                            alt="GitHub Logo" width="100px">
+                    </div>
+                    <div class="item">
+                        <label class="label-header">GitHub Profile Viewer</label>
+                    </div>
+                </section>
+                <br>
+                <div class="container" style="display: flex; justify-content: center; align-items: center;">
+                    <input type="text" id="input" class="margin-buttons-right" placeholder="Nome de Usuário"
+                        aria-label="Recipient's username">
+                    <div class="margin-buttons-right">
+                        <button id="searchBtn" class="icon-search" type="button">
+                            Pesquisar
+                        </button>
+                    </div>
+                    <div class="margin-buttons-right">
+                        <button id="clearBtn" class="icon-clear" type="submit" disabled>
+                            Limpar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="" role="alert" id="clear" style="display: none;">
+                <section class="container" id="information" style="display: flex;">
+                    <img class="rounded-circle mb-3" id="avatar" width="100" height="100" style="display: none;">
+                    <div class="container">
+                        <div class="container">
+                            <div class="item">
+                                <p class="label-login" id="username"></p>
+                            </div>
+                            <div class="item">
+                                <p class="label-default" id="login"></p>
+                            </div>
+                            <div class="container" style="display: flex;">
+                                <div class="margin-right">
+                                    <p class="label-default" id="following_url"></p>
+                                </div>
+                                <div class="margin-right">
+                                    <p class="label-default" id="followers_url"></p>
+                                </div>
+                                <div class="margin-left">
+                                    <p class="label-default" id="location"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <br>
+        <div class="menu-panel-repo" id="menu-panel-repo" style="display: none;">
+            <h2 class="label-login">Repositórios</h2>
+            <div class="repos-list">
+                <div class="container-repository" id="repos">
+                    <div class="item" id="repo-item-template" style="display: none;">
+                        <div class="container">
+                            <div class="item">
+                                <p class="label-login" id="repo-name"></p>
+                            </div>
+                            <div class="item">
+                                <p class="label-default" id="repo-description"></p>
+                            </div>
+                            <div class="container" style="display: flex;">
+                                <div class="margin-right">
+                                    <p class="label-default" id="repo-language"></p>
+                                </div>
+                                <div class="margin_right">
+                                    <p class="label-default" id="repo-stars"></p>
+                                </div>
+                                <div class="margin_left">
+                                    <p class="label-default" id="repo-forks"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer-container" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <p>Desenvolvido por <strong>Guilherme Ghirro</strong></p>
+        <p>
+            <a href="https://github.com/GuilhermeGhirro" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="20">
+                GitHub
+            </a>
+            <a href="https://instagram.com/seuusuario" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="20">
+                Instagram
+            </a>
+        </p>
+    </div>
+    <script type="module" src="./assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.icon-clear {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    padding-left: 30px; 
+    background-image: url('https://img.icons8.com/?size=100&id=87087&format=png&color=E3E3E3');
+    background-repeat: no-repeat;
+    background-size: 30px; 
+    background-position: left center;
+}
+
+.icon-search {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    padding-left: 35px; 
+    background-image: url('https://img.icons8.com/?size=100&id=132&format=png&color=E3E3E3');
+    background-repeat: no-repeat;
+    background-size: 30px; 
+    background-position: left center;
+}

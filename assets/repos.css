@@ -1,0 +1,72 @@
+.menu-panel-repo {
+    width: 100%;
+    min-height: 500px; 
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    overflow-y: auto; 
+    max-height: 6vh; 
+    transition: opacity 0.5s ease-in-out;
+    margin: 40px;
+}
+
+.repo-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+}
+
+.repo-info h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.repo-details {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+    font-size: 0.9em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #666363;
+}
+
+.repo-info a {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+.repo-info a:hover {
+    text-decoration: underline;
+}
+
+.menu-panel-repo::-webkit-scrollbar {
+    width: 10px;
+}
+
+.menu-panel-repo::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.menu-panel .content {
+    width: 100%;
+    text-align: center;
+}
+.menu-panel img {
+    max-width: 100%;
+}
+.input-group {
+    width: 100%;
+    max-width: 400px;
+}
